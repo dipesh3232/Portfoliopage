@@ -12,53 +12,42 @@ body {
 }
 
 
-
-header {
-  position: fixed;
+header{
+  padding-top: 3vh;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
+  white-space: wrap;
   justify-content: space-around;
-  width: 100%;
-  z-index: 10000;
-  background-color:rgba(34, 34, 34,0.3);
-
+  vertical-align: baseline;
 }
 
 header .logo {
-  float: left;
-  position: relative;
+  
   color: white;
-  text-decoration: underline;
-  margin-bottom: 30px;
+  text-decoration: none;
+ 
   font-weight: 700;
   font-size: 2em;
 }
 
 header ul {
-  float: right;
-  position: relative;
-  display: flex;
-  gap: 40px;
+  display: inline;
+   justify-content: center;
 }
-
-header ul li {
-  list-style: none;
+header ul li{
+  display: inline;
+  
+  
 }
 
 header ul li a {
+  padding-left: 3vw;
   text-decoration: none;
   color: white;
-  padding-right: 4px;
   font-weight: 500;
   font-size: 1.25em;
 }
 
-header ul li.active a,
-header ul li a:hover {
-  color: #30fe6c;
-}
+
 
 
 .page1 {
@@ -76,8 +65,8 @@ header ul li a:hover {
 }
 
 #Home .image{
-  margin-top: 10vh;
-  height: 80vh;
+  margin-top: 15vh;
+  height: 70vh;
  border-bottom-right-radius: 30%;
  
 }
@@ -85,7 +74,7 @@ header ul li a:hover {
   border-bottom-right-radius: 40%;
   
   top: 50%;
-  height: 80vh;
+  height: 60vh;
   border-bottom:3px solid #00ff48;
   
 }
@@ -94,7 +83,7 @@ header ul li a:hover {
 }
 #Home .name{
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 300;
   color: #222;
   text-shadow:  0 0 5px #222, 0 0 3px #222, 0 0 10px #222;
@@ -264,6 +253,9 @@ margin: 60px;
 
 
 #projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #333;
   padding: 50px 0;
   text-align: center;
@@ -305,6 +297,14 @@ footer {
   flex-wrap: wrap;
 }
 
+.creator{
+  padding-top: 2rem;
+  text-align: center;
+  
+  
+}
+
+
 .creator button{
   background-color: rgb(202, 202, 202);
   color: black;
@@ -315,7 +315,7 @@ footer {
 }
 .creator,
 .contact {
-  flex-basis: 40%;
+ width: 100%;
 }
 
 .creator h2,
@@ -332,11 +332,17 @@ footer {
 
 
 .contact form {
+  width: 100%;
+  text-align: center;
   color: black;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
 }
-
+.contact input{
+  width: 50%;
+}
 .contact input,
 .contact textarea {
 
@@ -348,17 +354,15 @@ footer {
   border: none;
 }
 
-.contact textarea {
-  height: 150px;
-}
+
 
 .contact button {
   background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+  width: 20%;
 }
 
 .contact button:hover {
