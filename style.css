@@ -15,7 +15,7 @@ body {
 header{
   padding-top: 3vh;
   display: flex;
-  white-space: wrap;
+  white-space:nowrap;
   justify-content: space-around;
   vertical-align: baseline;
 }
