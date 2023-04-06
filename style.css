@@ -29,6 +29,7 @@ header .logo {
 }
 
 header ul {
+  
   margin-top: 2vh;
   float: right;
 }
@@ -39,11 +40,20 @@ header ul li {
 }
 
 header ul li a {
-  padding-left: 3vw;
+  box-shadow: 10px 10px 40px black;
+  border-bottom: 3px solid #00ff48;
+  border-top: 3px solid #00ff48;
+  border-radius: 10px;
+  padding: 2px 3px;
   text-decoration: none;
   color: white;
   font-weight: 500;
   font-size: 1.25em;
+}
+header ul li a:hover{
+  font-size: 1.40rem;
+  transition: 0.3s;
+  
 }
 
 
@@ -118,9 +128,7 @@ header ul li a {
 }
 
 .buton1 {
-  padding-left: 10%;
-  position: relative;
-  display: inline-block;
+  
   font-size: 1.25em;
   max-width: 200px;
   background: #14ff57;
@@ -131,7 +139,9 @@ header ul li a {
   border-radius: 10px;
   text-decoration: none;
 }
-
+.buton1:hover{
+  box-shadow: 20px 20px 50px black;
+}
 
 
 #skillsh {
